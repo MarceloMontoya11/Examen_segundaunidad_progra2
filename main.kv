@@ -1,0 +1,91 @@
+<proyectoWindow>:
+    
+    canvas:
+        Color:
+            rgb:0,0,0
+        Rectangle:
+            size:self.size
+            pos:self.pos
+    Button:
+        size_hint:0.08,None
+        height:self.width
+        pos_hint:{'x':0.1,'y':0.1}
+        text:"Salir"
+        on_release:app.stop()
+    Button:
+        size_hint:0.08,None
+        height:self.width
+        pos_hint:{'x':0.58,'y':0.25}
+        on_press:root.a_cale()
+        on_release:root.b_cale()
+        text:"ON"
+    Button:
+        size_hint:0.08,None
+        height:self.width
+        pos_hint:{'x':0.84,'y':0.25}
+        on_press:root.a_foco()
+        on_release:root.b_foco()
+        text:"ON"
+        
+    
+    Label:
+        font_size:30
+        text:"Sistema de monitoreo de Temperatura y Luminosidad"
+        text_size:self.size
+        pos_hint:{'x':0.05,'y':0.85}
+    
+    Label:
+        font_size:20
+        text:"Temperatura:"
+        text_size:self.size
+        pos_hint:{'x':0.05,'y':0.7}
+        
+    Label:
+        font_size:20
+        text:"Luminosidad:"
+        text_size:self.size
+        pos_hint:{'x':0.05,'y':0.6}
+    
+    Label:
+        id:temp
+        font_size:20
+        text:""
+        text_size:self.size
+        pos_hint:{'x':0.22,'y':0.7}
+        
+    Label:
+        id:lumi
+        font_size:20
+        text:""
+        text_size:self.size
+        pos_hint:{'x':0.22,'y':0.6}
+        
+    Label:
+        font_size:20
+        text:"Rango de Temperatura:[22 C°,25°]"
+        text_size:self.size
+        pos_hint:{'x':0.05,'y':0.4}
+    
+    Label:
+        font_size:20
+        text:"Rango de Lumiosidad:[100 lx,150 lx]"
+        text_size:self.size
+        pos_hint:{'x':0.05,'y':0.3}
+    
+    Image:
+        pos_hint:{'x':0.11,'y':0.1}
+        size:'1dp','10'
+        source:'Ventilador-0 .png'
+        
+    Image:
+        pos_hint:{'x':0.38,'y':0.1}
+        size:'1dp','10'
+        source:'foco-0.png'
+
+   
+
+
+        
+   
+ 
+            
